@@ -43,6 +43,52 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>com.google.android</groupId>
+                <artifactId>support-v4</artifactId>
+                <version>r7</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>google-play-services</artifactId>
+                <version>7</version>
+                <type>apklib</type>
+            </dependency>
+            <dependency>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>google-play-services</artifactId>
+                <scope>provided</scope>
+                <version>7</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.google.http-client</groupId>
+                <artifactId>google-http-client-jackson</artifactId>
+                <version>1.15.0-rc</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>xpp3</artifactId>
+                        <groupId>xpp3</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>httpclient</artifactId>
+                        <groupId>org.apache.httpcomponents</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>junit</artifactId>
+                        <groupId>junit</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>android</artifactId>
+                        <groupId>com.google.android</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.nostra13.universalimageloader</groupId>
+                <artifactId>universal-image-loader</artifactId>
+                <version>1.8.4</version>
+            </dependency>
+            <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.6.6</version>
@@ -186,5 +232,11 @@
             </modules>
         </profile>
     </profiles>
+
+    <scm>
+        <connection>scm:git:git@github.com:txuslee/eatme.git</connection>
+        <url>scm:git:git@github.com:txuslee/eatme.git</url>
+        <developerConnection>scm:git:git@github.com:txuslee/eatme.git</developerConnection>
+    </scm>
 
 </project>
